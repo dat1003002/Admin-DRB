@@ -44,23 +44,23 @@ const MheModal = ({ open, handleOpen, data }) => {
             </thead>
             <tbody>
               <tr>
-                <td className="border border-black p-2 text-[red] font-extrabold">{data.mahang}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-base">{data.name}</td>
-                <td className="border border-black p-2 text-[rgb(255,0,0)] font-extrabold text-xl">{data.quycachloithep}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.khuonlodie}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.khuonsoiholder}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.sosoi}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.pitch}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.tieuchuan}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.thucte}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.doday}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.soi1}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.soi2}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.sodaycatduoc}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.chieudaicatlon}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.chieudaicatnho}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.tocdomaydun}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.tocdokeo}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-center">{data.mahang}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-base text-center">{data.name}</td>
+                <td className="border border-black p-2 text-[rgb(255,0,0)] font-extrabold text-xl text-center">{data.quycachloithep}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.khuonlodie}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.khuonsoiholder}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.sosoi}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.pitch}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.tieuchuan}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.thucte}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.doday}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.soi1}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.soi2}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.sodaycatduoc}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.chieudaicatlon}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.chieudaicatnho}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.tocdomaydun}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.tocdokeo}</td>
               </tr>
             </tbody>
           </table>
