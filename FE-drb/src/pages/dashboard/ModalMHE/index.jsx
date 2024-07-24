@@ -23,26 +23,33 @@ const MheModal = ({ open, handleOpen, data }) => {
           <table className="border-collapse border border-black w-full">
             <thead>
               <tr className="bg-[#e7e6e6]">
-                <th className="border border-black p-2 text-base font-semibold text-black">Mã Hàng</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Tên Sản Phẩm</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Quy Cách Lõi Thép</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Khuân Lỗ Đie</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Khuân Sợi Holder</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Số Sợi (±0)</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Pitch</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Mã Hàng</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tên Sản Phẩm</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Loại Lõi Thép</th>
+                <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Số Khuôn</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Số Sợi (±0)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Pitch</th>
+                <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Khổ<br/>(+5,-2mm)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Độ dày<br/>(±0.3mm)</th>
+                <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Chiều dài tiêu chuẩn lõi thép<br/>(±3mm)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Số Dây Cắt Được</th>
+                <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Chiều dài trước khi cắt</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Máy Đùn (≠50)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Kéo (≠50)</th>
+              </tr>
+              <tr className="bg-[#e7e6e6]">
+              <th className="border border-black p-2 text-base font-semibold text-black">Khuôn Die</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Khuôn lỗ</th>
                 <th className="border border-black p-2 text-base font-semibold text-black">Tiêu Chuẩn</th>
                 <th className="border border-black p-2 text-base font-semibold text-black">Thực Tế</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Độ Dày (≠ 0.3mm)</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Sợi 1 - 3</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Sợi 2 - 4</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Số Dây Cắt Được</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Chiều Dài Cắt Lớn</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Chiều Dài Cắt Nhỏ</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Máy Đùn (≠50)</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Kéo (≠50)</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Sợi 1÷3</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Sợi 2÷4</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Lớn</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Nhỏ</th>
               </tr>
             </thead>
             <tbody>
+              
               <tr>
                 <td className="border border-black p-2 text-[red] font-extrabold text-center">{data.mahang}</td>
                 <td className="border border-black p-2 text-[red] font-extrabold text-base text-center">{data.name}</td>
