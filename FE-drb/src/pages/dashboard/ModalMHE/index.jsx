@@ -34,8 +34,8 @@ const MheModal = ({ open, handleOpen, data }) => {
                 <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Chiều dài tiêu chuẩn lõi thép<br/>(±3mm)</th>
                 <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Số Dây Cắt Được</th>
                 <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Chiều dài trước khi cắt</th>
-                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Máy Đùn (≠50)</th>
-                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Kéo (≠50)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Máy Đùn (±50)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Kéo (±50)</th>
               </tr>
               <tr className="bg-[#e7e6e6]">
               <th className="border border-black p-2 text-base font-semibold text-black">Khuôn Die</th>
