@@ -68,7 +68,7 @@ const AddMhe = ({ open, handleOpen }) => {
                                     <input type="text" name="name" value={formData.name} onChange={handleChange} className="border border-black ml-9 w-[300px] text-black pl-1" />
                                 </div>
                                 <div className="flex mt-4 justify-between">
-                                    <label className="text-black font-medium text-base">Quy Cách Lõi Thép:</label>
+                                    <label className="text-black font-medium text-base"> Loại Lõi Thép:</label>
                                     <input type="text" name="quycachloithep" value={formData.quycachloithep} onChange={handleChange} className="border border-black ml-9 w-[300px] text-black pl-1" />
                                 </div>
                                 <div className="mt-4 border border-black pb-4">
