@@ -54,7 +54,7 @@ const EditMhe = ({ open, handleOpen, item }) => {
 
     const handleSubmit = (e) => {
         e.preventDefault();
-        axios.put(`http://localhost:5000/api/data/${item.id}`, formValues)
+        axios.put(`http://192.168.3.148:5000/api/data/${item.id}`, formValues)
             .then(response => {
                 handleOpen();
             })
@@ -115,7 +115,7 @@ const EditMhe = ({ open, handleOpen, item }) => {
                         </div>
                         <div>
                             <div className="flex justify-between">
-                                <label className="text-black font-medium text-base">Độ dày(≠ 0.3mm):</label>
+                                <label className="text-black font-medium text-base">Độ dày(± 0.3mm):</label>
                                 <input type="text" name="doday" value={formValues.doday} onChange={handleInputChange} className="border border-black ml-3 w-[300px] text-black pl-1" />
                             </div>
                             <div className="mt-4 border border-black pb-4">

@@ -39,7 +39,7 @@ const AddMhe = ({ open, handleOpen }) => {
             alert("Vui lòng điền đầy đủ các trường bắt buộc.");
             return;
         }
-        axios.post("http://localhost:5000/api/data", formData)
+        axios.post("http://192.168.3.148:5000/api/data", formData)
             .then(response => {
                 setFormData(initialFormData);
                 handleOpen();
@@ -68,7 +68,7 @@ const AddMhe = ({ open, handleOpen }) => {
                                     <input type="text" name="name" value={formData.name} onChange={handleChange} className="border border-black ml-9 w-[300px] text-black pl-1" />
                                 </div>
                                 <div className="flex mt-4 justify-between">
-                                    <label className="text-black font-medium text-base">Quy Cách Lõi Thép:</label>
+                                    <label className="text-black font-medium text-base"> Loại Lõi Thép:</label>
                                     <input type="text" name="quycachloithep" value={formData.quycachloithep} onChange={handleChange} className="border border-black ml-9 w-[300px] text-black pl-1" />
                                 </div>
                                 <div className="mt-4 border border-black pb-4">
@@ -104,7 +104,7 @@ const AddMhe = ({ open, handleOpen }) => {
                             </div>
                             <div className="">
                                 <div className="flex justify-between">
-                                    <label className="text-black font-medium text-base">Độ dày(≠ 0.3mm):</label>
+                                    <label className="text-black font-medium text-base">Độ dày(± 0.3mm):</label>
                                     <input type="text" name="doday" value={formData.doday} onChange={handleChange} className="border border-black ml-3 w-[300px] text-black pl-1" />
                                 </div>
                                 <div className="mt-4 border border-black pb-4">
@@ -134,11 +134,11 @@ const AddMhe = ({ open, handleOpen }) => {
                                     </div>
                                 </div>
                                 <div className="flex justify-between mt-4">
-                                    <label className="text-black font-medium text-base">Tốc độ máy đùn(≠50):</label>
+                                    <label className="text-black font-medium text-base">Tốc độ máy đùn(±50):</label>
                                     <input type="text" name="tocdomaydun" value={formData.tocdomaydun} onChange={handleChange} className="border border-black ml-1 w-[300px] text-black pl-1" />
                                 </div>
                                 <div className="flex justify-between mt-4">
-                                    <label className="text-black font-medium text-base">Tốc độ Kéo(≠50):</label>
+                                    <label className="text-black font-medium text-base">Tốc độ Kéo(±50):</label>
                                     <input type="text" name="tocdokeo" value={formData.tocdokeo} onChange={handleChange} className="border border-black ml-1 w-[300px] text-black pl-1" />
                                 </div>
                             </div>

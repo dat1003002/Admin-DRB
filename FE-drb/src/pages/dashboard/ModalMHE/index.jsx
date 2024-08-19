@@ -23,44 +23,51 @@ const MheModal = ({ open, handleOpen, data }) => {
           <table className="border-collapse border border-black w-full">
             <thead>
               <tr className="bg-[#e7e6e6]">
-                <th className="border border-black p-2 text-base font-semibold text-black">Mã Hàng</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Tên Sản Phẩm</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Quy Cách Lõi Thép</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Khuân Lỗ Đie</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Khuân Sợi Holder</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Số Sợi (±0)</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Pitch</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Mã Hàng</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tên Sản Phẩm</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Loại Lõi Thép</th>
+                <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Số Khuôn</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Số Sợi (±0)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Pitch</th>
+                <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Khổ<br/>(+5,-2mm)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Độ dày<br/>(±0.3mm)</th>
+                <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Chiều dài tiêu chuẩn lõi thép<br/>(±3mm)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Số Dây Cắt Được</th>
+                <th colspan="2" className="border border-black p-2 text-base font-semibold text-black">Chiều dài trước khi cắt</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Máy Đùn (±50)</th>
+                <th rowSpan="2" className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Kéo (±50)</th>
+              </tr>
+              <tr className="bg-[#e7e6e6]">
+              <th className="border border-black p-2 text-base font-semibold text-black">Khuôn Die</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Khuôn lỗ</th>
                 <th className="border border-black p-2 text-base font-semibold text-black">Tiêu Chuẩn</th>
                 <th className="border border-black p-2 text-base font-semibold text-black">Thực Tế</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Độ Dày (≠ 0.3mm)</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Sợi 1 - 3</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Sợi 2 - 4</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Số Dây Cắt Được</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Chiều Dài Cắt Lớn</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Chiều Dài Cắt Nhỏ</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Máy Đùn (≠50)</th>
-                <th className="border border-black p-2 text-base font-semibold text-black">Tốc Độ Kéo (≠50)</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Sợi 1÷3</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Sợi 2÷4</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Lớn</th>
+                <th className="border border-black p-2 text-base font-semibold text-black">Nhỏ</th>
               </tr>
             </thead>
             <tbody>
+              
               <tr>
-                <td className="border border-black p-2 text-[red] font-extrabold">{data.mahang}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-base">{data.name}</td>
-                <td className="border border-black p-2 text-[rgb(255,0,0)] font-extrabold text-xl">{data.quycachloithep}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.khuonlodie}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.khuonsoiholder}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.sosoi}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.pitch}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.tieuchuan}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.thucte}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.doday}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.soi1}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.soi2}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.sodaycatduoc}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.chieudaicatlon}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.chieudaicatnho}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.tocdomaydun}</td>
-                <td className="border border-black p-2 text-[red] font-extrabold text-xl">{data.tocdokeo}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-center">{data.mahang}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-base text-center">{data.name}</td>
+                <td className="border border-black p-2 text-[rgb(255,0,0)] font-extrabold text-xl text-center">{data.quycachloithep}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.khuonlodie}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.khuonsoiholder}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.sosoi}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.pitch}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.tieuchuan}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.thucte}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.doday}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.soi1}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.soi2}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.sodaycatduoc}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.chieudaicatlon}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.chieudaicatnho}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.tocdomaydun}</td>
+                <td className="border border-black p-2 text-[red] font-extrabold text-xl text-center">{data.tocdokeo}</td>
               </tr>
             </tbody>
           </table>

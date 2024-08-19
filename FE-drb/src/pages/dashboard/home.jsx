@@ -49,7 +49,7 @@ function Home() {
   }, [currentPage, allData, itemsPerPage]);
 
   const fetchData = () => {
-    axios.get('http://localhost:5000/data')
+    axios.get('http://192.168.3.148:5000/data')
       .then(response => {
         setAllData(response.data);
         setCurrentPage(1);
@@ -60,7 +60,7 @@ function Home() {
   };
 
   const handleSave = (formData) => {
-    axios.post("http://localhost:5000/api/data", formData)
+    axios.post("http://192.168.3.148:5000/api/data", formData)
       .then(response => {
         fetchData();
         setOpenAddDialog(false);
@@ -77,7 +77,7 @@ function Home() {
         {
           label: 'Xóa',
           onClick: () => {
-            axios.delete(`http://localhost:5000/api/data/${id}`)
+            axios.delete(`http://192.168.3.148:5000/api/data/${id}`)
               .then(response => {
                 fetchData();
               })

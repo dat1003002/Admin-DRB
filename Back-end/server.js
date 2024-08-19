@@ -10,7 +10,7 @@ app.use(express.json());
 
 const config = {
   user: "sa",
-  password: "12345",
+  password: "drbvnit",
   server: "localhost",
   database: "admin-drb",
   options: {
@@ -265,7 +265,9 @@ app.post('/login', checkSQLConnection, async (req, res) => {
   }
 });
 
+
+const HOST = "192.168.3.148";
 const PORT = process.env.PORT || 5000;
-app.listen(PORT, () => {
+app.listen(PORT, HOST, () => {
   console.log(`Server is running on port ${PORT}`);
 });

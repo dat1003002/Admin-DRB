@@ -12,12 +12,13 @@ export function SignIn() {
   const handleLogin = async (e) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:5000/login', { username, password });
+      const response = await axios.post('http://192.168.3.148:5000/login', { username, password });
       localStorage.setItem('token', response.data.token);
       localStorage.setItem('userRole', response.data.role);
       navigate('/dashboard/home');
     } catch (error) {
       setError('Sai tài khoản hoặc mật khẩu');
+      
     }
   };
 
