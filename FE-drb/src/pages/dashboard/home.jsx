@@ -16,7 +16,7 @@ function Home() {
   const [allData, setAllData] = useState([]);
   const [searchTerm, setSearchTerm] = useState("");
   const [currentPage, setCurrentPage] = useState(1);
-  const [itemsPerPage] = useState(10);
+  const [itemsPerPage] = useState(15);
   const [selectedItem, setSelectedItem] = useState(null);
   const [userRole, setUserRole] = useState(""); // Thêm state để lưu trữ vai trò của người dùng
 
@@ -200,9 +200,11 @@ function Home() {
                         </div>
                       </td>
                       <td className={className}>
-                        <Typography className="text-xs font-semibold"
+                        <Typography
+                          className="text-xs font-semibold hover:underline cursor-pointer"
                           color="blue-gray"
-                           variant="small"
+                          variant="small"
+                          onClick={() => handleOpenModal(item)}
                         >
                           {item.name}
                         </Typography>
